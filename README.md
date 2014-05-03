@@ -90,7 +90,7 @@ Operacionalização
 * O Apache Tomcat deve ser usado como container para a aplicação;
 
 
-Artefatos das Entregas por Etapa
+Artefatos das Etapa por Entregas
 ================================
 * **1ª Etapa: (29/05/2014)**
 	* Gerenciamento de usuários;
