@@ -45,10 +45,7 @@ Atributos das Entidades
 =======================
 
 * **O usuário:**
-	* Nome Completo, Apelido, Data de Nascimento,
-    Cidade, E-mail, Profissão, Locais onde já
-    trabalhou, Locais onde já estudou, Status, Foto;
-	
+	* Nome Completo, Apelido, Data de Nascimento, Cidade, E-mail, Profissão, Locais onde já trabalhou, Locais onde já estudou, Status, Foto;
 * **O grupo:**
 	* Nome, descrição, fundador;
 
