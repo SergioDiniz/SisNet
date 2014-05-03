@@ -15,7 +15,7 @@ Curso: [Análise e Desenvolvimento de Sistema] (http://www.ifpb.edu.br/cajazeira
 
 Instituição: [IFPB, campus Cajazeiras] (http://portal.ifpb.edu.br/campi/campi/cajazeiras)
 
-Professor: **Dr. Fábio Gomes de Andrade**
+Professor: **[Dr. Fábio Gomes de Andrade] (http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=P531629)**
 
 Alunos:
 * **Fátima de Sousa**
