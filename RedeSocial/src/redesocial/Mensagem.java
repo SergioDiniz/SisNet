@@ -1,6 +1,7 @@
 package redesocial;
 
 import java.util.Calendar;
+import java.util.Date;
 
 /**
  *
@@ -10,7 +11,7 @@ public class Mensagem {
 
     private String idMensagem;
     private String conteudo;
-    private Calendar dataEnvio;
+    private Date dataEnvio;
     private Usuario remetente;
     private Usuario destinatario;
 
@@ -18,7 +19,7 @@ public class Mensagem {
     
     }
     
-    public Mensagem(String idMensagem, String conteudo, Calendar dataEnvio, Usuario remetente, Usuario
+    public Mensagem(String idMensagem, String conteudo, Date dataEnvio, Usuario remetente, Usuario
             destinatario) {
         this.idMensagem = idMensagem;
         this.conteudo = conteudo;
@@ -43,11 +44,11 @@ public class Mensagem {
         this.conteudo = conteudo;
     }
 
-    public Calendar getDataEnvio() {
+    public Date getDataEnvio() {
         return dataEnvio;
     }
 
-    public void setDataEnvio(Calendar dataEnvio) {
+    public void setDataEnvio(Date dataEnvio) {
         this.dataEnvio = dataEnvio;
     }
 
@@ -72,8 +73,8 @@ public class Mensagem {
         return "Id Mensagem: " + idMensagem + 
                 "\nConteudo: " + conteudo + 
                 "\nData de Envio: " + dataEnvio + 
-                "\nRemetente: " + remetente.getNome() + 
-                "\nDestinatario: " + destinatario.getNome();
+                "\nRemetente: " + remetente.getId()+ 
+                "\nDestinatario: " + destinatario.getId();
     }
     
 }

@@ -2,10 +2,15 @@
 package ClassePrinciapl;
 import gerenciador.GerenciadorDeFotos;
 import gerenciador.GerenciadorDeGrupos;
+import gerenciador.GerenciadorDeMensagem;
+import gerenciador.GerenciadorDePostagem;
+import gerenciador.GerenciadorDeSolicitacao;
+import gerenciador.GerenciadorDeTopico;
 import gerenciador.GerenciadorDeUsuarios;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.util.Date;
+import redesocial.Grupo;
 import static redesocial.TratarDatas.converterStringParaDate;
 import redesocial.Usuario;
 /**
@@ -24,25 +29,18 @@ public class App {
         GerenciadorDeUsuarios gu = new GerenciadorDeUsuarios();
         GerenciadorDeFotos gf = new GerenciadorDeFotos();
         GerenciadorDeGrupos gg = new GerenciadorDeGrupos();
+        GerenciadorDeMensagem gm = new GerenciadorDeMensagem();
+        GerenciadorDePostagem gp = new GerenciadorDePostagem();
+        GerenciadorDeTopico gt = new GerenciadorDeTopico();
+        GerenciadorDeSolicitacao gs = new GerenciadorDeSolicitacao();
         
-        //Testes da Classe Usuario APP;
-        //gu.addUsuario("U-0001", "Fatinha de Sousa", "thisisit", "Fatinha", "fatinha@hotmail.com", "Analista de Sistemas", 
-        //        "Cajazeiras", "Solteira", converterStringParaDate("14/06/1994"), "Love Live Forever");
-    
-        //System.out.println(gu.buscarUsuario("Fatinha de Sousa"));
-        //gu.excluirUsuario("Fatinha de Sousa");
+        Usuario user = new Usuario();
+        Usuario user1 = new Usuario();
+        user = gu.buscarUsuario("Fatinha de Sousa");
+        user1 = gu.buscarUsuario("Neto Abrantes");
         
-        //Testes da Classe Foto;
-        //Usuario user = new Usuario();
-        //user = gu.buscarUsuario("Fatinha de Sousa");
-        //gf.addFoto("FT-0002", "Programacao da Depressao", "localhost", converterStringParaDate("19/05/2014"), 
-        //        user);
-        //gf.removeFoto("FT-0002");
-        
-        //Testes da Classe Grupo;
-        //gg.addGrupo("GP-0001", "Sem Nada Pra Fazer", "Sem Nada Pra Fazer", "Fatinha de Sousa",
-        //       converterStringParaDate("20/05/2014"), user);
-        //System.out.println(gg.localizaGrupo("Sem Nada Pra Fazer"));
-        //gg.excluirGrupo("Sem Nada Pra Fazer II");
+        //gs.addSolicitacao(1, user, user1, "Oi Aceita, Por favor!",converterStringParaDate("21/05/2014"));
+        //System.out.println(gs.localizaSolicitacao(1));
+        //gs.excluirSolicitacao(1);
     }
 }

@@ -1,6 +1,6 @@
 package redesocial;
 
-import java.util.Calendar;
+import java.util.Date;
 import java.util.ArrayList;
 /**
  *
@@ -10,15 +10,22 @@ public class Topico {
 
     private String idTopico;
     private String descricao;
-    private Calendar dataTopico;
+    private Date dataTopico;
+    private Grupo grupo;
+    private Usuario usuario;
     private ArrayList<ComentariosTopicos> comentarios;
 
-    public Topico(String idTopico, String descricao, Calendar dataTopico, ArrayList<ComentariosTopicos> comentarios) {
+    public Topico(String idTopico, String descricao, Date dataTopico, Usuario usuario, Grupo grupo,
+            ArrayList<ComentariosTopicos> comentarios) {
         this.idTopico = idTopico;
         this.descricao = descricao;
         this.dataTopico = dataTopico;
+        this.grupo = grupo;
+        this.usuario = usuario;
         this.comentarios = comentarios;
     }
+    
+    public Topico(){}
 
     public String getIdTopico() {
         return idTopico;
@@ -36,11 +43,11 @@ public class Topico {
         this.descricao = descricao;
     }
 
-    public Calendar getDataTopico() {
+    public Date getDataTopico() {
         return dataTopico;
     }
 
-    public void setDataTopico(Calendar dataTopico) {
+    public void setDataTopico(Date dataTopico) {
         this.dataTopico = dataTopico;
     }
 
@@ -51,6 +58,29 @@ public class Topico {
     public void setComentarios(ArrayList<ComentariosTopicos> comentarios) {
         this.comentarios = comentarios;
     }
-    
-    
+
+    public Grupo getGrupo() {
+        return grupo;
+    }
+
+    public void setGrupo(Grupo grupo) {
+        this.grupo = grupo;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    @Override
+    public String toString() {
+        return "Id Topico: " + idTopico + 
+                "\nDescricao: " + descricao + 
+                "\nData de Criação: " + dataTopico + 
+                "\nGrupo: " + grupo.getIdGrupo() + 
+                "\nUsuario: " + usuario.getId();
+    }
 }
